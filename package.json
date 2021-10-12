@@ -1,0 +1,18 @@
+{
+  "name": "n3-browserify",
+  "version": "1.11.1",
+  "description": "A browser build of N3.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -s N3 node_modules/n3/lib/index.js | uglifyjs > index.js"
+  },
+  "author": "Noel De Martin",
+  "homepage": "https://github.com/noeldemartin/n3-browserify",
+  "dependencies": {
+    "n3": "^1.11.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "uglify-js": "^3.14.2"
+  }
+}
